@@ -147,9 +147,9 @@ video {
   .hero__header {
     grid-column: 2 / 4;
     align-self: center;
-    margin-top: -60px;
+    max-width: 445px;
+    margin-top: -64px;
     animation: slide-left 1.8s ease-in-out;
-
   }
 
   .hero__lead {
@@ -212,10 +212,11 @@ video {
   .hero__content {
     grid-column: 5;
     min-height: 100%;
+    max-width: 255px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
   }
 
   /* Section B: Features */
@@ -250,17 +251,14 @@ video {
     max-height: 25px;
   }
 
-
-
   /* Footer */
 
   #footer {
     padding-block: 128px 39px;
   }
 
-  
   /* Keyframes */
-  
+
   @keyframes slide-up {
     from {
       transform: translateY(24rem);
@@ -296,10 +294,14 @@ video {
   }
 
   @keyframes fade-in-1 {
-      0% {opacity: 0;}
-      20% {opacity:1;}
-      100%{opacity: 1;}
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-
-
 }
