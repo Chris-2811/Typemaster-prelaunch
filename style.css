@@ -117,7 +117,7 @@ video {
   }
 
   .container {
-    max-width: 1110px;
+    max-width: 80%;
     margin: 0 auto;
   }
 
@@ -148,7 +148,7 @@ video {
     grid-column: 2 / 4;
     align-self: center;
     max-width: 445px;
-    margin-top: -64px;
+    margin-top: -60px;
     animation: slide-left 1.8s ease-in-out;
   }
 
@@ -216,7 +216,8 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 24px;
+    font-size: 16px;
   }
 
   /* Section B: Features */
@@ -227,6 +228,8 @@ video {
     text-align: left;
     font-size: 16px;
   }
+
+
 
   .features .feature:first-child {
     animation: fade-in-1 3.6s ease-in-out;
