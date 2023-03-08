@@ -94,13 +94,13 @@ video {
   }
 
   .btn-primary {
-    background: var(--Medium-blue);
+    background: var(--Light-blue);
     color: #000;
     transition: 0.3s linear;
   }
 
   .btn-primary:hover {
-    background: var(--Dark-blue);
+    background: var(--Medium-blue);
     color: #fff;
   }
 
@@ -127,6 +127,7 @@ video {
   #header .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   /* Section A: Hero */
@@ -144,7 +145,9 @@ video {
 
   .hero__header {
     grid-column: 2 / 4;
+    align-self: center;
     animation: slide-left 1.8s ease-in-out;
+
   }
 
   .hero__lead {
@@ -206,7 +209,11 @@ video {
 
   .hero__content {
     grid-column: 5;
-    align-self: center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
   }
 
   /* Section B: Features */
@@ -236,11 +243,12 @@ video {
     border-radius: 18px;
   }
 
-  .feature img {
-    background-color: var(--Orange);
-    height: 40px;
-    width: 40px;
+  .feature__icon img {
+    max-width: 25px;
+    max-height: 25px;
   }
+
+
 
   /* Footer */
 
