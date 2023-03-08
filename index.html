@@ -4,92 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/favicon-32x32.png"
-      type="image/x-icon"
-    />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="desktop.css">
-    <title>Typemaster</title>
+    <link rel="stylesheet" href="desktop.css" />
+    <title>Typemaster Prelaunch</title>
   </head>
   <body>
-    <!-- Header -->
-
-    <header>
-      <nav class="navbar container">
-        <div class="logo">
-          <img src="assets/shared/logo.svg" alt="" />
-        </div>
-        <a href="#" class="btn btn-secondary">pre-order now</a>
-      </nav>
+    <header id="header">
+      <div class="container row">
+        <a href="" class="header__logo"
+          ><img src="assets/shared/logo.svg" alt=""
+        /></a>
+        <a href="" class="btn btn-primary">Pre-order now</a>
+      </div>
     </header>
 
     <main>
-      <!-- Section A: Showcase -->
-      <div id="section-a">
-        <div class="container">
-          <div class="row grid-2-col">
-            <div class="content">
-              <h1>
-                typemaster <br />
-                Keyboard
-              </h1>
+      <!-- Section A: Hero -->
 
-              <p class="lead">
-                Improve your productivity and gaming without breaking the bank.
-                Upgrade to a high quality mechanical typing experience.
-              </p>
-              <a href="#" class="btn btn-primary">Pre-order now</a>
-              <span>Release on 5/27</span>
-            </div>
-            <div class="keyboard">
-              <img src="assets/desktop/image-keyboard.jpg" alt="" />
+      <section class="hero" id="Section-a">
+        <div class="grid grid-6-col">
+          <div class="hero__header">
+            <h1>Typemaster Keyboard</h1>
+            <p class="hero__lead">
+              Improve your productivity and gaming without breaking the bank.
+              Upgrade to a high quality mechanical typing experience.
+            </p>
+            <div class="hero__pre-order">
+              <a href="#" class="btn btn-secondary">Pre-order now</a>
+              <span>Realease on 5/27</span>
             </div>
           </div>
-          <div class="square square-right"></div>
+
+          <div class="hero_image hero__image-1">
+            <source
+              media="(max-width: 375px)"
+              srcset="assets/mobile/image-keyboard.jpg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/mobile/image-keyboard.jpg"
+            />
+            <img src="assets/desktop/image-keyboard.jpg" alt="" />
+          </div>
+
+          <img
+            src="assets/shared/pattern-square.svg"
+            alt=""
+            class="hero__square-1"
+            draggable="false"
+          />
+          <img
+            src="assets/shared/pattern-square.svg"
+            alt=""
+            class="hero__square-2"
+            draggable="false"
+          />
+
+          <div class="hero_image hero__image-2">
+            <source
+              media="(max-width: 375px)"
+              srcset="assets/mobile/image-keyboard.jpg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/mobile/image-keyboard.jpg"
+            />
+            <img src="assets/desktop/image-phone-and-keyboard.jpg" alt="" />
+          </div>
+
+          <div class="hero_image hero__image-3">
+            <source
+              media="(max-width: 375px)"
+              srcset="assets/mobile/image.jpg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="assets/mobile/image-keyboard.jpg"
+            />
+            <img src="assets/desktop/image-glass-and-keyboard.jpg" alt="" />
+          </div>
+
+          <div class="hero__content">
+            <h2>Mechanical Wireless Keyboard</h2>
+            <p class="hero__lead">
+              The Typemaster keyboard boasts top-notch build and practical
+              design. It offers a wide variety of switches and keycaps, along
+              with reliable wireless connectivity.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Section B: Information -->
+      </section>
+
+      <!-- Section B: Features -->
+
       <div id="section-b">
         <div class="container">
-          <div class="square square-left"></div>
-          <div class="row grid-4-col">
-            <div class="keyboard-phone">
-              <img src="assets/desktop/image-phone-and-keyboard.jpg" alt="" />
-            </div>
-            <div class="keyboard-glas">
-              <img src="assets/desktop/image-glass-and-keyboard.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h2>Mechanical wireless keyboard</h2>
-              <div class="lead">
-                The Typemaster keyboard boasts top-notch build and practical
-                design. It offers a wide variety of switches and keycaps, along
-                with reliable wireless connectivity.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Section C: Features -->
-      <div id="section-c">
-        <div class="container">
-          <div class="row grid-4-col">
+          <div class="features grid">
             <div class="feature">
-              <div>
-                <i class="fa-solid fa-desktop"></i>
+              <div class="feature__icon">
+                <img src="assets/shared/icon-compatible.svg" alt="" />
               </div>
               <h3>
-                Highly <br />
-                Compatible
+                HIGHLY <br />
+                COMPATIBLE
               </h3>
               <p class="lead">
                 Easy to use and works well with all major computer brands,
@@ -98,10 +115,12 @@
               </p>
             </div>
             <div class="feature">
-              <div><i class="fa-solid fa-bluetooth"></i></div>
+              <div class="feature__icon">
+                <img src="assets/shared/icon-bluetooth.svg" alt="" />
+              </div>
               <h3>
-                Wireless <br />
-                with bluetooth
+                WIRELESS <br />
+                WITH BLUETOOTH
               </h3>
               <p class="lead">
                 Powerful 2.4G RF technology allows you to connect the cordless
@@ -110,10 +129,12 @@
               </p>
             </div>
             <div class="feature">
-              <div><i class="fa-regular fa-battery-bolt"></i></div>
+              <div class="feature__icon">
+                <img src="assets/shared/icon-battery.svg" alt="" />
+              </div>
               <h3>
-                high capacity <br />
-                battery
+                HIGH CAPACITY <br />
+                BATTERY
               </h3>
               <p class="lead">
                 Equipped with a long-lasting built-in battery, you’ll never have
@@ -122,10 +143,12 @@
               </p>
             </div>
             <div class="feature">
-              <div><i class="fa-solid fa-lightbulb-on"></i></div>
+              <div class="feature__icon">
+                <img src="assets/shared/icon-light.svg" alt="" />
+              </div>
               <h3>
-                Rgb backlit <br />
-                modes
+                RGB BACKLIT <br />
+                MODES
               </h3>
               <p class="lead">
                 Choose from 4 backlight brightness levels and adjustable
@@ -138,14 +161,8 @@
       </div>
     </main>
 
-    <!-- Footer -->
-
-    <div id="footer">
-      <div class="container">
-        <p class="copyright">
-          <span>Typemaster 2021</span> | All Rights Reserved
-        </p>
-      </div>
+    <div id="footer" class="text-center">
+      <p class="copyright">Typemaster 2021 | All Rights Reserved</p>
     </div>
   </body>
 </html>
